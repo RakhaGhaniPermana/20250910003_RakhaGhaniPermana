@@ -1,0 +1,81 @@
+/* Teks dan Latar Belakang */
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: #333;
+            padding-top: 40px;
+            background-image: url('download.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        h1, h2 {
+            color: #6d1826;
+            margin-bottom: 5px;
+        }
+
+        /* Gaya Gambar/Foto */
+        img {
+            border-radius: 100px;
+            transition: transform 0.5s ease;
+            box-shadow: 2px 4px 8px #6d1826;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Wadah Kotak Utama */
+        .kotak-biodata {
+            background: rgb(218, 204, 159);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        /* Tabel Informasi Internal */
+        .tabel-info {
+            border-collapse: collapse;
+        }
+
+        .tabel-info td {
+            border-bottom: 1px solid #6d1826;
+            padding: 10px 8px;
+        }
+
+        /*Efek interaktif saat mouse melewati baris tabel*/
+        .tabel-info tr:hover {
+            background-color: rgba(109, 24, 38, 0.1);
+        }
+
+        /* Class untuk menengahkan konten */
+        .tengah {
+            text-align: center;
+        }
+
+        /* Membuat tombol untuk tautan */
+        .wadah-tombol {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .tombol-tautan {
+            display: inline-block;
+            background-color: #6d1826;
+            color: white !important; 
+            padding: 9px 18px;
+            margin: 0 8px;
+            border-radius: 10px; 
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.5s ease;
+        }
+        /* Berubah warna saat disorot */
+        .tombol-tautan:hover {
+            background-color: #a83447;
+            text-decoration: none;
+        }
+        

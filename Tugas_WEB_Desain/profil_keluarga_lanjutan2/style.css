@@ -1,0 +1,55 @@
+ /*gambranya*/
+        img {
+            border-radius: 100px;
+            transition: transform 0.5s ease;
+            box-shadow: 2px 4px 8px #6d1826;
+
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .foto-utama {
+            border-radius: 15px; 
+            transition: transform 0.5s ease;
+            box-shadow: 2px 4px 8px #6d1826;
+        }
+
+        /*tabelnya*/
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table,th,td {
+            border: 3px solid #6d1826;
+            padding: 10px;
+        }
+        th:first-child, td:first-child {
+            width: 4%;
+            text-align: center;
+        }
+        th {
+            background-color: #6d1826;
+            color: white;
+            text-align: center;
+        }
+        tr:hover {
+            background-color: #a834471c; 
+        }
+
+        /*class untuk objek berada di tengah*/
+        .tengah {
+            text-align: center;
+        }
+
+        /*link yang di bawah*/
+        a {
+            color: #6d1826;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #a83447;
+            text-decoration: underline;
+        }
