@@ -1,55 +1,198 @@
- /*gambranya*/
-        img {
-            border-radius: 100px;
-            transition: transform 0.5s ease;
-            box-shadow: 2px 4px 8px #6d1826;
+/* Reset Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        }
-        img:hover {
-            transform: scale(1.05);
-        }
-        .foto-utama {
-            border-radius: 15px; 
-            transition: transform 0.5s ease;
-            box-shadow: 2px 4px 8px #6d1826;
-        }
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    background-image: url('download.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    line-height: 1.6;
+}
 
-        /*tabelnya*/
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        table,th,td {
-            border: 3px solid #6d1826;
-            padding: 10px;
-        }
-        th:first-child, td:first-child {
-            width: 4%;
-            text-align: center;
-        }
-        th {
-            background-color: #6d1826;
-            color: white;
-            text-align: center;
-        }
-        tr:hover {
-            background-color: #a834471c; 
-        }
+/* --- NAVIGASI ATAS --- */
+.navbar {
+    background-color: #6d1826;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
 
-        /*class untuk objek berada di tengah*/
-        .tengah {
-            text-align: center;
-        }
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-        /*link yang di bawah*/
-        a {
-            color: #6d1826;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #a83447;
-            text-decoration: underline;
-        }
+.navbar a:hover {
+    background-color: rgb(218, 204, 159);
+    color: #6d1826;
+}
+
+/* --- WADAH UTAMA --- */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* --- KOTAK HEADER PROFIL KELUARGA --- */
+.hero-keluarga {
+    background: rgb(218, 204, 159);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    border-top: 8px solid #6d1826;
+}
+
+.hero-keluarga h1 {
+    color: #6d1826;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hero-keluarga p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4a1019;
+}
+
+/* --- FOTO KELUARGA BESAR --- */
+.foto-utama-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.foto-utama {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    border: 5px solid #6d1826;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease;
+}
+
+.foto-utama:hover {
+    transform: scale(1.02);
+}
+
+/* --- KOTAK-KOTAK KONTEN (CARD) --- */
+.card {
+    background: rgb(218, 204, 159);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+}
+
+.card h2 {
+    color: #6d1826;
+    border-bottom: 2px solid #6d1826;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* --- GALERI FOTO ANGGOTA KELUARGA (GRID) --- */
+.galeri-anggota {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.foto-anggota {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #6d1826;
+    box-shadow: 2px 4px 10px rgba(109, 24, 38, 0.4);
+    transition: transform 0.4s ease, border-color 0.3s;
+}
+
+.foto-anggota:hover {
+    transform: translateY(-10px);
+    border-color: #a83447;
+}
+
+/* --- TABEL MODERN --- */
+.tabel-modern {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden; /* Agar sudut tabel melengkung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tabel-modern th, .tabel-modern td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabel-modern th {
+    background-color: #6d1826;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabel-modern td:first-child {
+    text-align: center;
+    font-weight: bold;
+    color: #6d1826;
+}
+
+.tabel-modern tr:hover {
+    background-color: rgba(109, 24, 38, 0.05);
+}
+
+/* --- FOOTER & TAUTAN CEPAT --- */
+.tautan-cepat {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tautan-cepat a {
+    display: inline-block;
+    background-color: #6d1826;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tautan-cepat a:hover {
+    background-color: #a83447;
+    transform: translateY(-3px);
+}
+
+.footer {
+    background-color: #6d1826;
+    color: rgb(218, 204, 159);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

@@ -1,137 +1,126 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <title>Profil Keluarga Iyan Juniawan</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Profil Keluarga Iyan Juniawan</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body style="background-color: rgb(218, 204, 159);">
-
-    <div style="background-color: #6d1826; color: #ffffff; text-align: center; padding: 25px 14px;">
-        <h1 style="font-size: 300%; margin: 0;">Profil Keluarga Iyan Juniawan</h1>
-        <p style="font-size: 120%; font-family:'Lucida Sans', sans-serif; margin: 10px 0 0 0;">
-            Keluarga cemara yang senang bercerita
-        </p>
+    <!-- NAVBAR ATAS (Menu Navigasi) -->
+    <div class="navbar">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang-kami">Tentang Kami</a>
+        <a href="#galeri">Foto Keluarga</a>
+        <a href="#data-anggota">Data Anggota</a>
+        <!-- Pastikan path tautan di bawah ini mengarah dengan benar ke file profil diri Anda -->
+        <a href="../profil_sendiri/profil_sendiri.html">Kembali ke Profil Diri</a> 
     </div>
 
-    <hr color="#6d1826" size="5">
+    <div class="container" id="beranda">
+        
+        <!-- HEADER UTAMA -->
+        <div class="hero-keluarga">
+            <h1>Profil Keluarga Iyan Juniawan</h1>
+            <p>Keluarga cemara yang senang bercerita</p>
+        </div>
 
-    <p style="text-align: justify; font-family:'Calibri', sans-serif; font-size: 115%;">
-        Jadi inilah <b>anggota</b> dari keluarga saya yaitu:
-    </p>
-    
-    <ul style="font-size: 115%; font-family:'Calibri', sans-serif;">
-        <li>Iyan Juniawan</li>
-        <li>Yessy Chrisnawati</li>
-        <li>Rakha Ghani Permana</li>
-        <li>Rayna Aurelya</li>
-    </ul>
+        <!-- FOTO KELUARGA BESAR -->
+        <div class="foto-utama-container" id="galeri">
+            <img src="keluarga_besar.jpeg" class="foto-utama" alt="Foto Keluarga Besar Iyan Juniawan">
+            <h3 style="color: white; margin-top: 15px; text-shadow: 2px 2px 4px #000;">Potret Kebersamaan Keluarga</h3>
+        </div>
 
-    <br>
+        <!-- TENTANG KAMI -->
+        <div class="card" id="tentang-kami">
+            <h2>Tentang Kami</h2>
+            <p style="text-align: justify; font-size: 1.1rem; line-height: 1.8;">
+                Selamat datang di halaman profil keluarga <b>Iyan Juniawan</b> yang beranggotakan 4 orang, yaitu Ayah, Ibu, Kakak, dan Adik. 
+                Kami adalah keluarga kecil yang tinggal di <b>Kuningan, Jawa Barat</b>, lebih tepatnya di daerah <b>Cigadung</b>.
+            </p>
+            <br>
+            <p style="text-align: justify; font-size: 1.1rem; line-height: 1.8;">
+                Bagi kami, rumah bukan hanya sekadar tempat tinggal, melainkan sebuah ruang aman di mana setiap cerita itu berharga, 
+                entah itu tentang sekolah, pekerjaan, maupun lika-liku kehidupan. Kami selalu membiasakan diri untuk terbuka, 
+                berbagi cerita dan tawa di kala senang, serta saling menguatkan di kala sedih. Kami sangat percaya bahwa 
+                <b>komunikasi adalah kunci keharmonisan</b> dalam keluarga. Oleh karena itu, setiap anggota keluarga selalu berusaha 
+                memberikan dukungan terbaik demi impian dan kebahagiaan satu sama lain.
+            </p>
+            <br>
+            <p style="text-align: center; font-style: italic; color: #6d1826;">
+                * Halaman ini disusun untuk memenuhi tugas mata kuliah Pemrograman Web di Fakultas Ilmu Komputer, Universitas Kuningan. *
+            </p>
+        </div>
 
-    <h1>Tentang Kami</h1>
-    <p style="text-align: justify; font-family:'Calibri', sans-serif; font-size: 115%;">
-        Selamat datang di halaman profil Iyan Juniawan yang beranggotakan 4 orang yaitu ayah, ibu, kakak dan adik. Kami
-        adalah keluarga kecil yang tinggal di <b>Kuningan, Jawa Barat</b>, lebih tepatnya di <b>Cigadung</b>.
-        Kami selalu bercerita saat ketika senang maupun sedih dan berusaha saling mensupport satu sama lain. Bagi kami,
-        rumah bukan hanya sekadar tempat tinggal, melainkan sebuah ruang aman di mana setiap cerita itu berharga, entah
-        itu tentang sekolah, pekerjaan, maupun kehidupan sekalipun. Dalam menjalani keseharian, kami selalu membiasakan
-        diri untuk terbuka satu sama lain dengan berbagi cerita dan tawa di kala senang, serta saling menguatkan dan
-        bersandar di kala sedih melanda. Kami percaya bahwa komunikasi adalah kunci keharmonisan dalam keluarga,
-        sehingga
-        setiap anggota keluarga selalu berusaha memberikan dukungan terbaik demi impian dan kebahagiaan satu sama lain.
-    </p>
+        <!-- GALERI ANGGOTA & TABEL -->
+        <div class="card" id="data-anggota">
+            <h2>Anggota Keluarga</h2>
+            
+            <!-- Foto 4 Anggota Bulat Jejer -->
+            <div class="galeri-anggota">
+                <img src="kaka.jpeg" class="foto-anggota" title="Rakha (Kakak)" alt="Foto Rakha">
+                <img src="yai.jpeg" class="foto-anggota" title="Iyan (Ayah)" alt="Foto Iyan">
+                <img src="apihh.jpeg" class="foto-anggota" title="Rayna (Adik)" alt="Foto Rayna">
+                <img src="mimii.jpeg" class="foto-anggota" title="Yessy (Ibu)" alt="Foto Yessy">
+            </div>
 
-    <br>
+            <p style="text-align: center; margin-bottom: 20px; font-weight: bold; color: #6d1826;">
+                Data Singkat Anggota Keluarga Iyan Juniawan
+            </p>
 
-    <p style="text-align: justify; font-family:'Calibri', sans-serif; font-size: 115%;">
-        Halaman ini digunakan untuk memenuhi tugas mata kuliah <ins>Pemrograman Web</ins> di Universitas
-        <i>Kuningan</i>.
-        Semoga melalui halaman yang sederhana ini kami dapat memperkenalkan keluarga kami kepada kalian
-        yang melihatnya.
-    </p>
+            <!-- Tabel Data Modern -->
+            <table class="tabel-modern">
+                <tr>
+                    <th width="10%">No</th>
+                    <th width="40%">Nama Lengkap</th>
+                    <th width="20%">Peran</th>
+                    <th width="30%">Hobi Utama</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Rakha Ghani Permana</td>
+                    <td>Kakak</td>
+                    <td>Bermain Game</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rayna Aurelya</td>
+                    <td>Adik</td>
+                    <td>Menggambar</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Iyan Juniawan</td>
+                    <td>Ayah</td>
+                    <td>Menonton Bola</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Yessy Chrisnawati</td>
+                    <td>Ibu</td>
+                    <td>Membaca Buku</td>
+                </tr>
+            </table>
+        </div>
 
-    <hr color="#6d1826" size="2">
-    <br><br>
+        <!-- TAUTAN CEPAT -->
+        <div class="tautan-cepat">
+            <h3 style="color: white; margin-bottom: 15px; text-shadow: 2px 2px 4px #000;">Tautan Eksternal</h3>
+            <a href="https://uniku.ac.id" target="_blank">Universitas Kuningan</a>
+            <a href="https://fkom.uniku.ac.id/id/" target="_blank">Fakultas Ilmu Komputer</a>
+            <a href="https://www.instagram.com/akhaa.g/" target="_blank">Instagram Rakha</a>
+        </div>
 
-    <div class="tengah">
-        <img src="keluarga_besar.jpeg" class="foto-utama" width="750" alt="Foto Keluarga Besar">
-        <h3>Foto Bersama</h3>
-    </div>
+    </div> <!-- Penutup Container -->
 
-    <hr color="#6d1826" size="2">
-    <br><br>
-
-    <div class="tengah">
-        <img src="kaka.jpeg" width="250" style="margin-right: 20px;" alt="Rakha">
-        <img src="yai.jpeg" width="250" style="margin-right: 20px;" alt="Iyan">
-        <img src="apihh.jpeg" width="250" style="margin-right: 20px;" alt="Rayna">
-        <img src="mimii.jpeg" width="250" alt="Yessy">
-
-        <br><br>
-        <p style="font-size: 110%;">Berikut data singkat dari keluarga Iyan Juniawan</p>
-    </div>
-
-    <br>
-
-    <table>
-        <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Peran</th>
-            <th>Hobi</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td>Rakha Ghani Permana</td>
-            <td>Kakak</td>
-            <td>Bermain Game</td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>Rayna Aurelya</td>
-            <td>Adik</td>
-            <td>Menggambar</td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td>Iyan Juniawan</td>
-            <td>Ayah</td>
-            <td>Menonton Bola</td>
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td>Yessy Chrisnawati</td>
-            <td>Ibu</td>
-            <td>Membaca buku</td>
-        </tr>
-    </table>
-
-    <br>
-
-    <div class="tengah">
-        <p style="margin: 1; font-weight: bold;">Tautan</p>
-        <ul style="list-style-type: none; padding: 0;">
-            <li><a href="https://uniku.ac.id" target="_blank">Universitas Kuningan</a></li>
-            <li><a href="https://fkom.uniku.ac.id/id/" target="_blank">Fakultas Ilmu Komputer</a></li>
-            <li><a href="https://www.instagram.com/akhaa.g/" target="_blank">Instagram</a></li>
-        </ul>
-    </div>
-
-    <br>
-
-    <div
-        style="background-image: url('download.jpeg'); background-size: cover; background-position: center; color: #ffffff; text-align: center; padding: 11px;">
-        <p style="margin: 0;">
-            2026 Keluarga Iyan Juniawan<br>
-            <small>Dibuat oleh Rakha Ghani Permana, Sistem Informasi, Universitas Kuningan</small>
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            &copy; 2026 Keluarga Iyan Juniawan<br>
+            <small>Dibuat oleh Rakha Ghani Permana | Sistem Informasi - Universitas Kuningan</small>
         </p>
     </div>
 
 </body>
-
 </html>

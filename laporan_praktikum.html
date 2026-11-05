@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum Web Desain - Rakha Ghani Permana</title>
+    <link rel="stylesheet" href="laporan_style.css">
+</head>
+<body>
+
+    <!-- NAVBAR ATAS -->
+    <div class="navbar">
+        <a href="index.html">Beranda Root</a>
+        <a href="Tugas_WEB_Desain/profil_sendiri/profil_sendiri.html">Profil Diri</a>
+        <a href="Tugas_WEB_Desain/profil_keluarga_lanjutan2/Profil_Keluarga_2.html">Profil Keluarga</a>
+        <a href="laporan_praktikum.html">Laporan Praktikum</a>
+    </div>
+
+    <div class="container">
+        
+        <!-- HEADER UTAMA -->
+        <div class="hero-laporan">
+            <h1>📄 Laporan Praktikum Web Desain</h1>
+            <p>Rakha Ghani Permana (20250910003) — Sistem Informasi Universitas Kuningan</p>
+        </div>
+
+        <div class="row">
+            
+            <!-- KOLOM KIRI: DAFTAR MODUL -->
+            <div class="col-modul">
+                <div class="card">
+                    <h2>Daftar Modul</h2>
+                    <p style="margin-bottom: 15px; font-size: 0.95rem;">Klik modul di bawah untuk menampilkan dokumen PDF pada layar sebelah kanan:</p>
+                    
+                    <button class="btn-modul active" onclick="bukaPDF('Praktikum/modul_1/laprakna/MODUL_1.pdf', 'Modul 1: Pengenalan HTML Dasar')">
+                        📑 Modul 1
+                        <span>Pengenalan HTML & Elemen Dasar</span>
+                    </button>
+
+                    <button class="btn-modul" onclick="bukaPDF('Praktikum/modul_2/laprakna/Laporan Praktikum Web Desain Modul 2 Rakha Ghani Permana SINFC-2025-02.pdf', 'Modul 2: Git & Github Integration')">
+                        📑 Modul 2
+                        <span>Pengelolaan Repository & GitHub</span>
+                    </button>
+
+                    <button class="btn-modul" onclick="bukaPDF('Praktikum/modul_3/laprakna/Laporan Praktikum Web Desain Modul 3 Rakha Ghani Permana SINFC-2025-02.pdf', 'Modul 3: Styling dengan CSS')">
+                        📑 Modul 3
+                        <span>Styling CSS & Formatting Text</span>
+                    </button>
+
+                    <button class="btn-modul" onclick="bukaPDF('Praktikum/modul_4/laprakna/Laporan Praktikum Web Desain Modul 3 Rakha Ghani Permana SINFC-2025-02.pdf', 'Modul 4: Layouting & Flexbox')">
+                        📑 Modul 4
+                        <span>Layouting Web & Flexbox Modern</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- KOLOM KANAN: PDF VIEWER INTERAKTIF -->
+            <div class="col-viewer">
+                <div class="card">
+                    <h2 id="judul-modul">Modul 1: Pengenalan HTML Dasar</h2>
+                    
+                    <!-- Frame Tempat Membaca PDF -->
+                    <div class="pdf-container">
+                        <iframe id="pdf-frame" src="Praktikum/modul_1/laprakna/MODUL 1.pdf"></iframe>
+                    </div>
+
+                    <div style="text-align: right;">
+                        <a id="link-download" href="Praktikum/modul_1/laprakna/MODUL 1.pdf" target="_blank" class="btn-open-newtab">
+                            🔗 Buka PDF di Tab Baru
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Penutup Row -->
+    </div> <!-- Penutup Container -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>&copy; 2026 Laporan Praktikum Web Desain — Rakha Ghani Permana | UNIKU</p>
+    </div>
+
+    <!-- SCRIPT GANTI PDF SEGARAS/OTOMATIS -->
+    <script>
+        function bukaPDF(pathFile, judul) {
+            // Ubah file di iframe
+            document.getElementById('pdf-frame').src = pathFile;
+            // Ubah Judul Modul
+            document.getElementById('judul-modul').innerText = judul;
+            // Ubah link tombol tab baru
+            document.getElementById('link-download').href = pathFile;
+
+            // Atur status aktif pada tombol
+            let tombols = document.querySelectorAll('.btn-modul');
+            tombols.forEach(btn => btn.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
