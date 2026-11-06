@@ -73,25 +73,19 @@
                 </div>
             </div>
 
-        </div> <!-- Penutup Row -->
-    </div> <!-- Penutup Container -->
+        </div> 
+    </div> 
 
-    <!-- FOOTER -->
     <div class="footer">
         <p>&copy; 2026 Laporan Praktikum Web Desain — Rakha Ghani Permana | UNIKU</p>
     </div>
 
-    <!-- SCRIPT GANTI PDF SEGARAS/OTOMATIS -->
     <script>
         function bukaPDF(pathFile, judul) {
-            // Ubah file di iframe
             document.getElementById('pdf-frame').src = pathFile;
-            // Ubah Judul Modul
             document.getElementById('judul-modul').innerText = judul;
-            // Ubah link tombol tab baru
             document.getElementById('link-download').href = pathFile;
-
-            // Atur status aktif pada tombol
+            
             let tombols = document.querySelectorAll('.btn-modul');
             tombols.forEach(btn => btn.classList.remove('active'));
             event.currentTarget.classList.add('active');

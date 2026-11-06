@@ -16,7 +16,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- NAVIGASI ATAS --- */
 .navbar {
     background-color: #6d1826;
     padding: 15px 30px;
@@ -43,14 +42,12 @@ body {
     color: #6d1826;
 }
 
-/* --- WADAH UTAMA --- */
 .container {
     max-width: 1100px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* --- KOTAK HEADER PROFIL KELUARGA --- */
 .hero-keluarga {
     background: rgb(218, 204, 159);
     padding: 40px;
@@ -73,7 +70,6 @@ body {
     color: #4a1019;
 }
 
-/* --- FOTO KELUARGA BESAR --- */
 .foto-utama-container {
     text-align: center;
     margin-bottom: 40px;
@@ -92,7 +88,6 @@ body {
     transform: scale(1.02);
 }
 
-/* --- KOTAK-KOTAK KONTEN (CARD) --- */
 .card {
     background: rgb(218, 204, 159);
     padding: 30px;
@@ -109,7 +104,6 @@ body {
     text-align: center;
 }
 
-/* --- GALERI FOTO ANGGOTA KELUARGA (GRID) --- */
 .galeri-anggota {
     display: flex;
     justify-content: center;
@@ -133,13 +127,12 @@ body {
     border-color: #a83447;
 }
 
-/* --- TABEL MODERN --- */
 .tabel-modern {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
     border-radius: 10px;
-    overflow: hidden; /* Agar sudut tabel melengkung */
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -166,7 +159,6 @@ body {
     background-color: rgba(109, 24, 38, 0.05);
 }
 
-/* --- FOOTER & TAUTAN CEPAT --- */
 .tautan-cepat {
     text-align: center;
     margin-bottom: 30px;

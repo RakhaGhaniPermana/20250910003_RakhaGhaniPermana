@@ -1,11 +1,9 @@
-/* Reset Margin & Padding dasar */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Teks dan Latar Belakang */
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     color: #333;
@@ -16,7 +14,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- NAVIGASI ATAS --- */
 .navbar {
     background-color: #6d1826;
     padding: 15px 30px;
@@ -43,14 +40,12 @@ body {
     color: #6d1826;
 }
 
-/* --- WADAH UTAMA --- */
 .container {
     max-width: 1100px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* --- KOTAK PROFIL ATAS (HERO SECTION) --- */
 .hero {
     background: rgb(218, 204, 159);
     padding: 40px;
@@ -67,7 +62,7 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    /* Membuat foto jadi bulat seperti contoh dosen */
+    
     border: 5px solid #6d1826;
     box-shadow: 2px 4px 8px rgba(109, 24, 38, 0.5);
     transition: transform 0.5s ease;
@@ -103,7 +98,6 @@ body {
     background-color: #a83447;
 }
 
-/* --- TATA LETAK DUA KOLOM --- */
 .row {
     display: flex;
     gap: 30px;
@@ -112,17 +106,15 @@ body {
 
 .col-main {
     flex: 2;
-    /* Kolom kiri lebih lebar */
+    
     min-width: 300px;
 }
 
 .col-sidebar {
     flex: 1;
-    /* Kolom kanan lebih kecil */
     min-width: 250px;
 }
 
-/* --- KOTAK-KOTAK KONTEN (CARD) --- */
 .card {
     background: rgb(218, 204, 159);
     padding: 30px;
@@ -138,7 +130,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Tabel Informasi Internal */
 .tabel-info {
     width: 100%;
     border-collapse: collapse;
@@ -153,7 +144,6 @@ body {
     background-color: rgba(109, 24, 38, 0.1);
 }
 
-/* Tombol Tautan di Sidebar */
 .quick-link {
     display: block;
     background-color: white;
@@ -172,7 +162,6 @@ body {
     color: white;
 }
 
-/* Informasi Kontak di Sidebar */
 .kontak-item {
     margin-bottom: 15px;
 }
@@ -182,7 +171,6 @@ body {
     display: block;
 }
 
-/* Footer */
 .footer {
     text-align: center;
     padding: 20px;
@@ -191,7 +179,6 @@ body {
     margin-top: 20px;
 }
 
-/* Agar responsif di layar HP */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -203,7 +190,6 @@ body {
     }
 }
 
-/* --- TABEL JADWAL KULIAH --- */
 .table-responsive {
     width: 100%;
     overflow-x: auto;
@@ -211,7 +197,6 @@ body {
     border-radius: 8px;
 }
 
-/* Custom Scrollbar agar keren dan serasi dengan warna maroon */
 .table-responsive::-webkit-scrollbar {
     height: 6px;
 }
@@ -233,7 +218,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     font-size: 0.8rem;
-    /* Mengecilkan ukuran font sedikit agar muat pas */
+
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -241,7 +226,6 @@ body {
     background-color: #6d1826;
     color: white;
     padding: 8px 5px;
-    /* Memperkecil padding agar tabel tidak terlalu lebar */
     text-align: center;
     font-weight: bold;
     font-size: 0.82rem;
@@ -254,7 +238,6 @@ body {
     border-right: 1px solid #eee;
     color: #333;
     white-space: nowrap;
-    /* Mencegah teks terpotong-potong ke bawah */
 }
 
 .tabel-jadwal td:nth-child(1),

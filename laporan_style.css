@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-/*--background--*/
+
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     color: #333;
@@ -16,7 +16,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- NAVIGASI ATAS --- */
 .navbar {
     background-color: #6d1826;
     padding: 15px 30px;
@@ -43,14 +42,12 @@ body {
     color: #6d1826;
 }
 
-/* --- WADAH UTAMA --- */
 .container {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* --- HERO HEADER --- */
 .hero-laporan {
     background: rgb(218, 204, 159);
     padding: 30px;
@@ -72,26 +69,22 @@ body {
     color: #4a1019;
 }
 
-/* --- TATA LETAK DUA KOLOM --- */
 .row {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
 }
 
-/* Sidebar Tombol Modul */
 .col-modul {
     flex: 1;
     min-width: 280px;
 }
 
-/* Area Display PDF */
 .col-viewer {
     flex: 2.5;
     min-width: 320px;
 }
 
-/* --- KOTAK CARD --- */
 .card {
     background: rgb(218, 204, 159);
     padding: 25px;
@@ -107,7 +100,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* --- LIST TOMBOL MODUL --- */
 .btn-modul {
     display: block;
     width: 100%;
@@ -140,7 +132,6 @@ body {
     margin-top: 3px;
 }
 
-/* --- BINGKAI VIEWING PDF (IFRAME) --- */
 .pdf-container {
     width: 100%;
     height: 650px;
@@ -157,7 +148,6 @@ body {
     border: none;
 }
 
-/* Tombol Akses Langsung */
 .btn-open-newtab {
     display: inline-block;
     background-color: #6d1826;
@@ -174,7 +164,6 @@ body {
     background-color: #a83447;
 }
 
-/* FOOTER */
 .footer {
     background-color: #6d1826;
     color: rgb(218, 204, 159);
