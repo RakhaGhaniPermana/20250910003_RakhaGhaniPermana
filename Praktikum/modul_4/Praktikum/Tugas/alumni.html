@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Alumni FKOM - Universitas Kuningan</title>
+    <link rel="stylesheet" href="alumni.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="../../../../index.html">Menu Utama</a>
+        <a href="../../../../praktikum.html">Halaman Praktikum</a>
+        <a href="#daftar-alumni">Data Alumni</a>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Portal Alumni FKOM UNIKU</h1>
+            <p>Direktori Lulusan Fakultas Ilmu Komputer — Sistem Informasi, Teknik Informatika, Desain Komunikasi Visual, dan Teknik Sipil.</p>
+        </div>
+
+        <!-- Fitur Pencarian & Filter Jurusan -->
+        <div class="filter-box" id="daftar-alumni">
+            <input type="text" id="searchInput" placeholder="Cari nama alumni atau jurusan ">
+            
+            <select id="jurusanFilter">
+                <option value="Semua">Semua Jurusan</option>
+                <option value="Sistem Informasi (SI)">Sistem Informasi (SI)</option>
+                <option value="Teknik Informatika (TI)">Teknik Informatika (TI)</option>
+                <option value="Desain Komunikasi Visual (DKV)">Desain Komunikasi Visual (DKV)</option>
+                <option value="Teknik Sipil (TS)">Teknik Sipil (TS)</option>
+            </select>
+        </div>
+
+        <p class="info-jumlah" id="jumlahAlumni">Menampilkan 101 dari 101 Alumni</p>
+
+        <!-- Wadah Kartu Alumni (Diisi otomatis oleh JavaScript) -->
+        <div class="alumni-grid" id="alumniContainer"></div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Portal Alumni FKOM UNIKU - Rakha Ghani Permana</p>
+    </div>
+
+    <script src="alumni.js"></script>
+</body>
+</html>
